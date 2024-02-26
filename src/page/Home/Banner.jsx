@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className="bg-[url('https://i.ibb.co/CQpXLyS/image.png')] bg-cover h-screen mb-20">
       <div className="bg-black/50 w-full h-full flex items-center">
-        <div className="ml-40 space-y-5">
+        <div className="lg:ml-40 px-5 space-y-5">
           <p className="uppercase text-[#d8d6d6] text-xl ">
             {" "}
             welcome to emanage

@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "userName": "John Doe",
+      "userImg": "https://i.ibb.co/WGPBQ80/Man-1.png",
+      "review": "Great service! The team delivered a fantastic website that exceeded our expectations.",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "userName": "Raju Ahammed",
+      "userImg": "https://i.ibb.co/QKCxLf9/1875241862.jpg",
+      "review": "The mobile app they developed for us is top-notch. Very professional and reliable.",
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "userName": "Alice Johnson",
+      "userImg": "https://i.ibb.co/ZJRL96B/Man-5.png",
+      "review": "Excellent UI/UX design work. Our users love the new look and feel of our app.",
+      "rating": 4.8
+    },
+    {
+      "id": 4,
+      "userName": "Bob Brown",
+      "userImg": "https://example.com/user4.jpg",
+      "review": "Digital marketing campaigns have significantly increased our online presence.",
+      "rating": 4.2
+    },
+    {
+      "id": 5,
+      "userName": "Emily Davis",
+      "userImg": "https://example.com/user5.jpg",
+      "review": "Cloud computing services have helped streamline our business operations.",
+      "rating": 4.6
+    }
+  ]

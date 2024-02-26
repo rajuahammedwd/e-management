@@ -1,20 +1,28 @@
-import { FaEnvelope, FaFacebook, FaInfoCircle, FaLinkedin, FaRegClock, FaRegUser, FaTwitter} from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaFacebook,
+  FaInfoCircle,
+  FaLinkedin,
+  FaRegClock,
+  FaRegUser,
+  FaTwitter,
+} from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const MiniNav = () => {
   return (
-    <div className="flex justify-between px-10 mt-2">
-      <div className="flex gap-5">
+    <div className="hidden md:flex lg:flex justify-between px-10 mt-2">
+      <div className="lg:flex gap-5">
         <div>
-          <li className="flex items-center hover:text-[#FD7800]">
+          <a className="flex items-center hover:text-[#FD7800]">
             <FaEnvelope className="mr-2"></FaEnvelope>to@example.com
-          </li>
+          </a>
         </div>
         <div>
-          <li className="flex items-center">
+          <a className="flex items-center">
             <FaRegClock className="mr-2"></FaRegClock>Mon – Sat 8:00 – 18:00,
             Sunday-CLOSED
-          </li>
+          </a>
         </div>
       </div>
       <div>
@@ -24,9 +32,15 @@ const MiniNav = () => {
           </li>
           <li className="flex items-center border-r-2 pr-2">
             <FaRegUser className="mr-2"></FaRegUser>
-            <Link className="hover:text-[#FD7800]">Sign In</Link> / {" "}
-            <Link className="hover:text-[#FD7800]">Register</Link>
+            <Link to="/login" className="hover:text-[#FD7800]">
+              Sign In
+            </Link>{" "}
+            /{" "}
+            <Link to="/register" className="hover:text-[#FD7800]">
+              Register
+            </Link>
           </li>
+
           <li className="flex items-center border-r-2 pr-2 hover:text-[#FD7800]">
             <FaFacebook className="mr-2"></FaFacebook>
           </li>

@@ -1,10 +1,20 @@
-import {Link, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
+import { useContext } from "react";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  console.log(user);
+  const handleLogOut = () => {
+    logOut().then(() => {
+      console.log("User Sign Out");
+    });
+  };
+
   const navLink = (
     <>
       <li className="font-bold">
-        <NavLink to="/"	>Home</NavLink>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li className="font-bold">
         <NavLink to="/service">Services</NavLink>
@@ -57,6 +67,42 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLink}</ul>
         </div>
         <div className="navbar-end">
+          {/* Nav End */}
+          {user && (
+            <div className="flex-none gap-2">
+              <div className="dropdown dropdown-end">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-ghost btn-circle avatar"
+                >
+                  <div className="w-10 rounded-full">
+                    {user.photoURL ? (
+                      <img src={user.photoURL} alt="UserImg" />
+                    ) : (
+                      <img
+                        src="https://i.ibb.co/tKgxWB8/images.png"
+                        alt="UserImg"
+                      />
+                    )}
+                  </div>
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+                >
+                  <li>
+                    <a className="justify-between">{user?.email}</a>
+                  </li>
+                  <li>
+                    <button onClick={handleLogOut}>Logout</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          )}
+
+          {/* nav End Finish */}
           <a className="btn text-white bg-[#FD7800] px-10">Contact</a>
         </div>
       </div>

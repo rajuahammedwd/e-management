@@ -1,5 +1,7 @@
-import MiniNav from "../shared/MiniNav";
+
 import Banner from "./Banner";
+import Reviews from "./Reviews";
+import ServicePlan from "./ServicePlan";
 import Services from "./Services";
 
 
@@ -8,6 +10,8 @@ const Home = () => {
         <div>
             <Banner />
             <Services />
+            <ServicePlan />
+            <Reviews />
         </div>
     );
 };
