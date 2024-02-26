@@ -1,14 +1,13 @@
 import MiniNav from "../shared/MiniNav";
-import Navbar from "../shared/Navbar";
 import Banner from "./Banner";
+import Services from "./Services";
 
 
 const Home = () => {
     return (
         <div>
-            <MiniNav />
-            <Navbar />
             <Banner />
+            <Services />
         </div>
     );
 };

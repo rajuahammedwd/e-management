@@ -1,12 +1,15 @@
-import Home from "../page/Home/Home";
-
+import { Outlet } from "react-router-dom";
+import Navbar from "../page/shared/Navbar";
+import MiniNav from "../page/shared/MiniNav";
 
 const Main = () => {
-    return (
-        <div>
-            <Home/>
-        </div>
-    );
+  return (
+    <div>
+      <MiniNav />
+      <Navbar />
+      <Outlet />
+    </div>
+  );
 };
 
 export default Main;

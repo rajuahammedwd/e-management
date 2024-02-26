@@ -1,0 +1,50 @@
+[
+ {
+      "id": 1,
+      "name": "Web Development",
+      "description": "Custom web development services tailored to your business needs.",
+      "fee": "$1000 - $5000",
+      "rating": 4.5,
+      "img": "https://www.globalmediainsight.com/blog/wp-content/uploads/Best-Programming-Languages-for-Web-Development.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mobile App Development",
+      "description": "Create innovative and user-friendly mobile applications for iOS and Android platforms.",
+      "fee": "$2000 - $10000",
+      "rating": 4.8,
+      "img": "https://i.ibb.co/vQ8qz9y/FREE-Python-Course-For-Beginners.png"
+    },
+    {
+      "id": 3,
+      "name": "Cloud Computing",
+      "description": "Leverage cloud technologies to optimize your business operations and scalability.",
+      "fee": "$1500 - $8000",
+      "rating": 4.3,
+      "img": "https://miro.medium.com/v2/resize:fit:640/1*ngkHgQq7ij1NBNr62er3zA.png"
+    },
+    {
+      "id": 4,
+      "name": "UI/UX Design",
+      "description": "Design intuitive and visually appealing user interfaces for web and mobile applications.",
+      "fee": "$800 - $3000",
+      "rating": 4.6,
+      "img": "https://i.ibb.co/7jwG71Q/UX-design-courses.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Digital Marketing",
+      "description": "Increase your online presence and reach your target audience through digital marketing strategies.",
+      "fee": "$500 - $2000",
+      "rating": 4.4,
+      "img": "https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_digital_marketing.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Grapic Design",
+      "description": "Increase your online presence and reach your target audience through digital marketing strategies.",
+      "fee": "$500 - $2000",
+      "rating": 4.4,
+      "img": "https://i.ibb.co/q7hqH4h/700x400-Pencilbox-Workshop-on-Graphics-Design.jpg"
+    }
+  ]
